@@ -12,7 +12,7 @@ def count_words(document):
     #Tokenize all words in 'raw_file' using word_tokenize()
     token_list = nltk.tokenize.word_tokenize(raw_file)
     #Convert each item in token list to lower_case list
-    lowercase_tokens = [each.lower() for each in token_list]
+    lowercase_tokens = [each.lower() for each in token_list if each.isalpha()]
     #Create list of each word and associated count
     bag_Of_Words = Counter(lowercase_tokens)
     return bag_Of_Words
