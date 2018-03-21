@@ -1,7 +1,9 @@
 #Import Packages
 import pandas as pd
+import matplotlib.pyplot as plt
 from collections import Counter
 
+#Extracts contents of a file, returns a bag of words(count of each word)
 def count_words(document):
     #Load target File as 'document' to 'raw_file' 
     raw_file = pd.read_csv(document)
@@ -12,3 +14,10 @@ def count_words(document):
     #Create list of each word and associated count
     bag_Of_Words = Counter(lowercase_tokens)
     return bag_Of_Words
+
+#Given a particular bag of words, desired counts, creates a dataframe, resets index, plots counts
+def plot_counts(bag_of_words, amount):
+    df = pd.DataFrame(bag_of_words.most_common(amount))
+    df.set_index(0,drop=True,inplace=True)
+    df.plot(kind="bar")
+    plt.show()
