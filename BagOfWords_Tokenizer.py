@@ -17,7 +17,11 @@ def count_words(document):
 
 #Given a particular bag of words, desired counts, creates a dataframe, resets index, plots counts
 def plot_counts(bag_of_words, amount):
+    #Convert bag_of_words array to a dataframe defined by top 'amount' ex '10' for top 10 words in array 
     df = pd.DataFrame(bag_of_words.most_common(amount))
+    #Sets index to column '0', which holds the string value for each entry, col '1' contains the count 
     df.set_index(0,drop=True,inplace=True)
+    #Define a bar plot
     df.plot(kind="bar")
+    #Display plot
     plt.show()
