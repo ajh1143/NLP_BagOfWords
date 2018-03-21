@@ -1,14 +1,16 @@
 #Import Packages
 import pandas as pd
 import matplotlib.pyplot as plt
+import nltk
 from collections import Counter
+#nltk.download('punkt') - Use if error raised at runtime
 
 #Extracts contents of a file, returns a bag of words(count of each word)
 def count_words(document):
-    #Load target File as 'document' to 'raw_file' 
-    raw_file = pd.read_csv(document)
+    #Load target File as 'document' to 'raw_file'
+    raw_file = open(document).read()
     #Tokenize all words in 'raw_file' using word_tokenize()
-    token_list = word_tokenize(raw_file)
+    token_list = nltk.tokenize.word_tokenize(raw_file)
     #Convert each item in token list to lower_case list
     lowercase_tokens = [each.lower() for each in token_list]
     #Create list of each word and associated count
