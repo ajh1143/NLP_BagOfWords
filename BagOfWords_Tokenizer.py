@@ -11,4 +11,4 @@ def count_words(document):
     lowercase_tokens = [each.lower() for each in token_list]
     #Create list of each word and associated count
     bag_Of_Words = Counter(lowercase_tokens)
-    print(bag_Of_Words)
+    return bag_Of_Words
