@@ -27,3 +27,8 @@ def plot_counts(bag_of_words, amount):
     df.plot(kind="bar")
     #Display plot
     plt.show()
+
+if __name__ == "__main__":
+wordBag = count_words(your_document)
+howMany = input(print("How many of the top words would you like to be displayed?"))
+plot_counts(wordBag, howMany)
