@@ -2,8 +2,7 @@
 
 ### Summary of Work Flow
 
-<img src="https://github.com/ajh1143/ajh1143.github.io/tree/master/Images/NLP_Images/nlp_title.jpg" class="inline"/><br>
-Words matter.
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/NLP_Images/nlp_title.jpg" class="inline"/><br>
 
 #### Import Packages
 
