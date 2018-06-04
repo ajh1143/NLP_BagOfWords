@@ -3,6 +3,7 @@
 ### Summary of Work Flow
 
 <img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/NLP_Images/nlp_title.jpg" class="inline"/><br>
+Words Matter
 
 #### Import Packages
 
@@ -44,7 +45,7 @@ word_series = pd.Series(count_words(your_doc))
 
 ```
 
-<img src="https://github.com/ajh1143/ajh1143.github.io/tree/master/Images/NLP_Images/nlp_series.jpg" class="inline"/><br>
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/NLP_Images/nlp_series.jpg" class="inline"/><br>
 
 
 #### Describe
@@ -55,7 +56,7 @@ print(word_series.describe())
 
 ```
 
-<img src="https://github.com/ajh1143/ajh1143.github.io/tree/master/Images/NLP_Images/nlp_desc.jpg" class="inline"/><br>
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/NLP_Images/nlp_desc.jpg" class="inline"/><br>
 
 ### Plotting Counts
 
@@ -80,7 +81,7 @@ def plot_counts(bag_of_words, amount):
 
 ```
 
-<img src="https://github.com/ajh1143/ajh1143.github.io/tree/master/Images/NLP_Images/nlp_top_ten.png" class="inline"/><br>
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/NLP_Images/nlp_top_ten.png" class="inline"/><br>
 
 ## Code Summary
 
